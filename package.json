@@ -1,0 +1,29 @@
+{
+  "name": "@lockally/ui-core",
+  "version": "0.1.2",
+  "description": "Framework-agnostic browser client powering the Lockally UI component libraries (@lockally/react, /vue, /svelte, /angular).",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "repository": { "type": "git", "url": "https://github.com/LockallyInc/lockally-ui-core.git" },
+  "homepage": "https://lockally.com",
+  "keywords": ["lockally", "email", "browser", "client", "components"],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  }
+}
