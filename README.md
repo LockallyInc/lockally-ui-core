@@ -14,7 +14,7 @@
 Framework-agnostic browser client that powers the Lockally UI component libraries
 ([`@lockally/react`](https://www.npmjs.com/package/@lockally/react),
 `@lockally/vue`, `@lockally/svelte`, `@lockally/angular`). You usually don't install
-this directly — install the package for your framework.
+this directly; install the package for your framework.
 
 ## Browser-safe auth
 
@@ -40,7 +40,7 @@ Or point `baseUrl` at your own proxy that adds credentials server-side and pass 
 const client = new LockallyClient({ baseUrl: '/api/lockally' });
 ```
 
-A secret key returned to the browser is refused with a console error — return a
+A secret key returned to the browser is refused with a console error. Return a
 short-lived token instead.
 
 ## API
